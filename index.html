@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/img/svg/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+          <h1 class="title">Memory Game</h1>
+        </div>
+    </header>  
+    
+    <main>
+
+        <div class="content__container">
+
+            <div class="grid__container">
+                <div class="grid">
+
+                    <div class="grid__item">
+                        <img class="front_face" src="./memory-game/assets/img/angular.svg" alt="Angular" onclick="countMoves()">
+                        <img class="back_face" src="./memory-game/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/angular.svg" alt="Angular" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/aurelia.svg" alt="Aurelia" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/aurelia.svg" alt="Aurelia" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+ 
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/backbone.svg" alt="Backbone" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/backbone.svg" alt="Backbone" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/ember.svg" alt="Ember" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/ember.svg" alt="Ember" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/react.svg" alt="React" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/react.svg" alt="React" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/vue.svg" alt="Vue" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+
+                    <div class="grid__item">
+                        <img class="front_face" src="/assets/img/vue.svg" alt="Vue" onclick="countMoves()">
+                        <img class="back_face" src="/assets/img/js-badge.svg" alt="Memory Card" onclick="countMoves()">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timer__сontainer">
+                <div class="time__container">
+                    <div class="time">Time</div>
+                    <div class="timer" id="tmr">1:00</div>
+                </div>
+
+                <div class="play_again">
+                    <button class="play_again__btn" id="play_again">PLAY AGAIN</button>
+                </div>
+
+                <div class="moves__container">
+                    <div class="moves">Moves</div>
+                    <div class="number_of_moves" id="mvs">0</div>
+                </div>
+            </div>
+    
+            <div class="score__container">
+                <div class="score">Score of the last 10 games</div>
+                <div class="score__grid"></div>
+            </div>
+        </div>
+
+       <div class="buttons__container">
+        <form action="#" class="form__wrapper" method="get">
+            <label for="name" class="label">Enter your name
+                <input class="input" type="text" id="name"  minlength="1" maxlength="12" autocomplete="off" autofocus name="name" placeholder="Ваше имя">
+                <button class="submit__btn" type="submit" id="go_button">Go!</button>
+            </label>
+        </form>
+        
+       </div>
+    </main>
+    
+    <footer class="footer__container">
+        <div class="footer">
+            <div class="copy_text">2024 &copy;</div>
+            <a href="https://rs.school/" class="logo"><img src="/assets/img/svg/rs-school-logo.svg" alt="RS-logo"></a>
+            <a href="https://github.com/Nasutia85" class="github_logo"><img src="/assets/img/svg/github-logo.svg" alt="GitHub-logo"></a>
+        </div>
+    </footer>    
+    
+    <script src="./memory-game/js303-game/scripts.js"></script>
+    
+</body>
+</html>
